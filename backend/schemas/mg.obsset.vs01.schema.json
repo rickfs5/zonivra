@@ -1,0 +1,519 @@
+{
+ "$defs": {
+  "Bbox": {
+   "additionalProperties": false,
+   "properties": {
+    "x": {
+     "title": "X",
+     "type": "integer"
+    },
+    "y": {
+     "title": "Y",
+     "type": "integer"
+    },
+    "w": {
+     "title": "W",
+     "type": "integer"
+    },
+    "h": {
+     "title": "H",
+     "type": "integer"
+    }
+   },
+   "required": [
+    "x",
+    "y",
+    "w",
+    "h"
+   ],
+   "title": "Bbox",
+   "type": "object"
+  },
+  "Cls": {
+   "additionalProperties": false,
+   "properties": {
+    "label": {
+     "enum": [
+      "person",
+      "vehicle",
+      "other"
+     ],
+     "title": "Label",
+     "type": "string"
+    },
+    "state": {
+     "const": "known",
+     "title": "State",
+     "type": "string"
+    },
+    "detector_label": {
+     "title": "Detector Label",
+     "type": "string"
+    },
+    "detector_class_id": {
+     "title": "Detector Class Id",
+     "type": "integer"
+    }
+   },
+   "required": [
+    "label",
+    "state",
+    "detector_label",
+    "detector_class_id"
+   ],
+   "title": "Cls",
+   "type": "object"
+  },
+  "Confidence": {
+   "additionalProperties": false,
+   "properties": {
+    "permille": {
+     "anyOf": [
+      {
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "title": "Permille"
+    },
+    "kind": {
+     "enum": [
+      "not_applicable",
+      "human_asserted",
+      "model_uncalibrated",
+      "model_calibrated"
+     ],
+     "title": "Kind",
+     "type": "string"
+    }
+   },
+   "required": [
+    "permille",
+    "kind"
+   ],
+   "title": "Confidence",
+   "type": "object"
+  },
+  "Frame": {
+   "additionalProperties": false,
+   "properties": {
+    "frame_index": {
+     "minimum": 0,
+     "title": "Frame Index",
+     "type": "integer"
+    },
+    "status": {
+     "const": "analyzed",
+     "title": "Status",
+     "type": "string"
+    },
+    "pixel_sha256": {
+     "title": "Pixel Sha256",
+     "type": "string"
+    },
+    "objects": {
+     "items": {
+      "$ref": "#/$defs/Obj"
+     },
+     "title": "Objects",
+     "type": "array"
+    }
+   },
+   "required": [
+    "frame_index",
+    "status",
+    "pixel_sha256",
+    "objects"
+   ],
+   "title": "Frame",
+   "type": "object"
+  },
+  "Meta": {
+   "additionalProperties": false,
+   "description": "Unhashed metadata. Strict (MG-DATA-001 section 5 lists creation time, tool, notes, provenance_id); VS-01 adds two counters.",
+   "properties": {
+    "created_utc": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Created Utc"
+    },
+    "tool": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Tool"
+    },
+    "notes": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Notes"
+    },
+    "provenance_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Provenance Id"
+    },
+    "elapsed_ms": {
+     "anyOf": [
+      {
+       "minimum": 0,
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Elapsed Ms"
+    },
+    "dropped_degenerate_boxes": {
+     "anyOf": [
+      {
+       "minimum": 0,
+       "type": "integer"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Dropped Degenerate Boxes"
+    }
+   },
+   "title": "Meta",
+   "type": "object"
+  },
+  "Obj": {
+   "additionalProperties": false,
+   "properties": {
+    "obj_key": {
+     "pattern": "^[A-Za-z0-9_-]{1,32}$",
+     "title": "Obj Key",
+     "type": "string"
+    },
+    "cls": {
+     "$ref": "#/$defs/Cls"
+    },
+    "bbox": {
+     "$ref": "#/$defs/Bbox"
+    },
+    "truncated": {
+     "$ref": "#/$defs/Truncated"
+    },
+    "confidence": {
+     "$ref": "#/$defs/Confidence"
+    },
+    "track_ref": {
+     "default": null,
+     "title": "Track Ref",
+     "type": "null"
+    }
+   },
+   "required": [
+    "obj_key",
+    "cls",
+    "bbox",
+    "truncated",
+    "confidence"
+   ],
+   "title": "Obj",
+   "type": "object"
+  },
+  "Producer": {
+   "additionalProperties": false,
+   "properties": {
+    "adapter_id": {
+     "title": "Adapter Id",
+     "type": "string"
+    },
+    "adapter_version": {
+     "title": "Adapter Version",
+     "type": "string"
+    },
+    "model_id": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "title": "Model Id"
+    },
+    "weights_sha256": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "title": "Weights Sha256"
+    },
+    "params_hash": {
+     "title": "Params Hash",
+     "type": "string"
+    },
+    "label_map_digest": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "title": "Label Map Digest"
+    },
+    "params": {
+     "additionalProperties": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "string"
+       },
+       {
+        "type": "boolean"
+       }
+      ]
+     },
+     "title": "Params",
+     "type": "object"
+    }
+   },
+   "required": [
+    "adapter_id",
+    "adapter_version",
+    "model_id",
+    "weights_sha256",
+    "params_hash",
+    "label_map_digest",
+    "params"
+   ],
+   "title": "Producer",
+   "type": "object"
+  },
+  "SourceBinding": {
+   "additionalProperties": false,
+   "properties": {
+    "source_digest": {
+     "title": "Source Digest",
+     "type": "string"
+    },
+    "frame_table_digest": {
+     "title": "Frame Table Digest",
+     "type": "string"
+    },
+    "frame_count": {
+     "minimum": 1,
+     "title": "Frame Count",
+     "type": "integer"
+    },
+    "width": {
+     "minimum": 1,
+     "title": "Width",
+     "type": "integer"
+    },
+    "height": {
+     "minimum": 1,
+     "title": "Height",
+     "type": "integer"
+    },
+    "native_width": {
+     "minimum": 1,
+     "title": "Native Width",
+     "type": "integer"
+    },
+    "native_height": {
+     "minimum": 1,
+     "title": "Native Height",
+     "type": "integer"
+    }
+   },
+   "required": [
+    "source_digest",
+    "frame_table_digest",
+    "frame_count",
+    "width",
+    "height",
+    "native_width",
+    "native_height"
+   ],
+   "title": "SourceBinding",
+   "type": "object"
+  },
+  "StatusRange": {
+   "additionalProperties": false,
+   "properties": {
+    "from_frame": {
+     "title": "From Frame",
+     "type": "integer"
+    },
+    "to_frame": {
+     "title": "To Frame",
+     "type": "integer"
+    },
+    "status": {
+     "enum": [
+      "not_analyzed_stride",
+      "not_analyzed_dropped",
+      "source_gap",
+      "adapter_error"
+     ],
+     "title": "Status",
+     "type": "string"
+    }
+   },
+   "required": [
+    "from_frame",
+    "to_frame",
+    "status"
+   ],
+   "title": "StatusRange",
+   "type": "object"
+  },
+  "Truncated": {
+   "additionalProperties": false,
+   "properties": {
+    "left": {
+     "default": false,
+     "title": "Left",
+     "type": "boolean"
+    },
+    "right": {
+     "default": false,
+     "title": "Right",
+     "type": "boolean"
+    },
+    "top": {
+     "default": false,
+     "title": "Top",
+     "type": "boolean"
+    },
+    "bottom": {
+     "default": false,
+     "title": "Bottom",
+     "type": "boolean"
+    }
+   },
+   "title": "Truncated",
+   "type": "object"
+  }
+ },
+ "additionalProperties": false,
+ "properties": {
+  "schema": {
+   "enum": [
+    "mg.obsset.vs01",
+    "mg.obsset.live.vs02"
+   ],
+   "title": "Schema",
+   "type": "string"
+  },
+  "source_binding": {
+   "$ref": "#/$defs/SourceBinding"
+  },
+  "coord_space": {
+   "const": "image_px_v1",
+   "title": "Coord Space",
+   "type": "string"
+  },
+  "taxonomy": {
+   "const": "mg.cls.v0",
+   "title": "Taxonomy",
+   "type": "string"
+  },
+  "origin": {
+   "enum": [
+    "synthetic_scripted",
+    "human_annotated",
+    "model_inference"
+   ],
+   "title": "Origin",
+   "type": "string"
+  },
+  "producer": {
+   "$ref": "#/$defs/Producer"
+  },
+  "tracks": {
+   "default": [],
+   "items": {
+    "additionalProperties": true,
+    "type": "object"
+   },
+   "maxItems": 0,
+   "title": "Tracks",
+   "type": "array"
+  },
+  "frames": {
+   "items": {
+    "$ref": "#/$defs/Frame"
+   },
+   "title": "Frames",
+   "type": "array"
+  },
+  "frame_status_ranges": {
+   "items": {
+    "$ref": "#/$defs/StatusRange"
+   },
+   "title": "Frame Status Ranges",
+   "type": "array"
+  },
+  "meta": {
+   "$ref": "#/$defs/Meta",
+   "default": {
+    "created_utc": null,
+    "tool": null,
+    "notes": null,
+    "provenance_id": null,
+    "elapsed_ms": null,
+    "dropped_degenerate_boxes": null
+   }
+  }
+ },
+ "required": [
+  "schema",
+  "source_binding",
+  "coord_space",
+  "taxonomy",
+  "origin",
+  "producer",
+  "frames",
+  "frame_status_ranges"
+ ],
+ "title": "ObservationSet",
+ "type": "object"
+}

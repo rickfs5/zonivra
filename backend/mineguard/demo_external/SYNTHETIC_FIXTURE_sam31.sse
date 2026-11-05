@@ -1,0 +1,9 @@
+event: response.created
+data: {"type":"response.created"}
+
+event: response.output_text.delta
+data: {"type":"response.output_text.delta","delta":"<0f>1<|box;x1=40;y1=90;x2=230;y2=200;w=320;h=240;c=0.91|><|mask;x=0;y=0;c=0.91;data=4,5,!aB|cD|>,2<|box;x1=250;y1=60;x2=300;y2=120;w=320;h=240;c=0.55|><|mask;x=0;y=0;c=0.55;data=4,5,!aB|cD|>"}
+
+event: response.completed
+data: {"type":"response.completed"}
+

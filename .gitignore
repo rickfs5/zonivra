@@ -1,0 +1,18 @@
+# media, weights, envs, caches, logs, run outputs
+test-assets/
+models/*
+!models/MANIFEST.json
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+frontend/dist/
+runs/
+logs/*
+!logs/.gitkeep
+*.mp4
+*.pth
+*.pt
+*.onnx
+.DS_Store

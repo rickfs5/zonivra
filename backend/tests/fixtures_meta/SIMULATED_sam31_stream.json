@@ -1,0 +1,162 @@
+{
+ "_label": "SIMULATED. Hand-written from the documented grammar (dev.meta.ai/docs/sam/reading-segmentation, read 2026-11-01). NOT produced by any Meta model. Never present as a SAM 3.1 result.",
+ "image": {
+  "width": 640,
+  "height": 480
+ },
+ "cases": {
+  "two_objects": {
+   "events": [
+    {
+     "type": "response.output_text.delta",
+     "delta": "<0f>1<|box;x1=10;y1=20;x2=110;y2=220;w=640;h=480;c=0.91|><|mask;x=0;y=0;c=0.91;data=4,5,!aB|cD|>,3<|box;x1=300;y1=100;x2=500;y2=400;w=640;h=480;c=0.55|><|mask;x=0;y=0;c=0.55;data=4,5,!aB|cD|>"
+    },
+    {
+     "type": "response.completed"
+    }
+   ],
+   "expect": "PARSED_OBJECTS"
+  },
+  "no_confidence": {
+   "events": [
+    {
+     "type": "response.output_text.delta",
+     "delta": "<0f>1<|box;x1=10;y1=20;x2=110;y2=220;w=640;h=480|><|mask;x=0;y=0;data=4,5,!aB|cD|>"
+    },
+    {
+     "type": "response.completed"
+    }
+   ],
+   "expect": "PARSED_OBJECTS"
+  },
+  "zero_matches": {
+   "events": [
+    {
+     "type": "response.completed"
+    }
+   ],
+   "expect": "PARSED_NO_MATCH_REPORTED"
+  },
+  "incomplete_stream": {
+   "events": [
+    {
+     "type": "response.output_text.delta",
+     "delta": "<0f>1<|box;x1=10;y1=20;x2=110;y2=220;w=640;h=480|><|mask;x=0;y=0;data=4,5,!aB|cD|>"
+    }
+   ],
+   "expect": "UNKNOWN"
+  },
+  "failed_event": {
+   "events": [
+    {
+     "type": "response.failed",
+     "response": {
+      "status": "failed"
+     }
+    }
+   ],
+   "expect": "UNKNOWN"
+  },
+  "error_event": {
+   "events": [
+    {
+     "type": "error",
+     "code": "server_shutting_down"
+    }
+   ],
+   "expect": "UNKNOWN"
+  },
+  "box_outside_image": {
+   "events": [
+    {
+     "type": "response.output_text.delta",
+     "delta": "<0f>1<|box;x1=10;y1=20;x2=700;y2=220;w=640;h=480|><|mask;x=0;y=0;data=4,5,!aB|cD|>"
+    },
+    {
+     "type": "response.completed"
+    }
+   ],
+   "expect": "UNKNOWN"
+  },
+  "size_mismatch": {
+   "events": [
+    {
+     "type": "response.output_text.delta",
+     "delta": "<0f>1<|box;x1=10;y1=20;x2=110;y2=220;w=1280;h=720|><|mask;x=0;y=0;data=4,5,!aB|cD|>"
+    },
+    {
+     "type": "response.completed"
+    }
+   ],
+   "expect": "UNKNOWN"
+  },
+  "wrong_frame_for_image": {
+   "events": [
+    {
+     "type": "response.output_text.delta",
+     "delta": "<3f>1<|box;x1=10;y1=20;x2=110;y2=220;w=640;h=480|><|mask;x=0;y=0;data=4,5,!aB|cD|>"
+    },
+    {
+     "type": "response.completed"
+    }
+   ],
+   "expect": "UNKNOWN"
+  },
+  "duplicate_object_id": {
+   "events": [
+    {
+     "type": "response.output_text.delta",
+     "delta": "<0f>1<|box;x1=10;y1=20;x2=110;y2=220;w=640;h=480|><|mask;x=0;y=0;data=4,5,!aB|cD|>,1<|box;x1=30;y1=30;x2=50;y2=50;w=640;h=480|><|mask;x=0;y=0;data=4,5,!aB|cD|>"
+    },
+    {
+     "type": "response.completed"
+    }
+   ],
+   "expect": "UNKNOWN"
+  },
+  "mask_missing": {
+   "events": [
+    {
+     "type": "response.output_text.delta",
+     "delta": "<0f>1<|box;x1=1;y1=1;x2=5;y2=5;w=640;h=480|>"
+    },
+    {
+     "type": "response.completed"
+    }
+   ],
+   "expect": "UNKNOWN"
+  },
+  "confidence_disagree": {
+   "events": [
+    {
+     "type": "response.output_text.delta",
+     "delta": "<0f>1<|box;x1=1;y1=1;x2=5;y2=5;w=640;h=480;c=0.9|><|mask;x=0;y=0;c=0.8;data=4,5,!ab|>"
+    },
+    {
+     "type": "response.completed"
+    }
+   ],
+   "expect": "UNKNOWN"
+  },
+  "garbage": {
+   "events": [
+    {
+     "type": "response.output_text.delta",
+     "delta": "<0f>hello"
+    },
+    {
+     "type": "response.completed"
+    }
+   ],
+   "expect": "UNKNOWN"
+  },
+  "event_without_type": {
+   "events": [
+    {
+     "delta": "x"
+    }
+   ],
+   "expect": "UNKNOWN"
+  }
+ }
+}

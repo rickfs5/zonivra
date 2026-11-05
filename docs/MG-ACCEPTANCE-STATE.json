@@ -1,0 +1,354 @@
+{
+ "schema": "mg.acceptance-state.v1",
+ "commit": null,
+ "generated_utc": "2026-11-03T05:57:56Z",
+ "gate": "NOT RUN",
+ "evidence_sha256_prefix": null,
+ "all_exit_codes_zero": false,
+ "totals": {
+  "collected": 2005,
+  "modules": 56,
+  "executed_passed": 0
+ },
+ "modules": [
+  {
+   "module": "acceptance_counts",
+   "collected": 3,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "adapter_policy",
+   "collected": 8,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "alert_delivery029",
+   "collected": 6,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "costgov_base",
+   "collected": 30,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "costgov_hardening",
+   "collected": 34,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "cycle24_alerts",
+   "collected": 10,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "cycle24_feed",
+   "collected": 25,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "cycle24_store",
+   "collected": 30,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "cycle24_wcam",
+   "collected": 10,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "cycle25_findings",
+   "collected": 9,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "cycle7_findings",
+   "collected": 36,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "cycle8_findings",
+   "collected": 53,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "doc_consistency",
+   "collected": 3,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "external_import",
+   "collected": 216,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "final_remediation031",
+   "collected": 109,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "gate_preconditions",
+   "collected": 5,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "integration_real",
+   "collected": 21,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "meta_containment",
+   "collected": 97,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "meta_invariants",
+   "collected": 10,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "meta_pipeline",
+   "collected": 14,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "meta_provenance",
+   "collected": 195,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "meta_sam31",
+   "collected": 53,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "meta_transport",
+   "collected": 38,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "muse_open",
+   "collected": 49,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "night_review1",
+   "collected": 9,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "night_review2",
+   "collected": 12,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "night_review3",
+   "collected": 9,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "night_review4",
+   "collected": 6,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "night_review5",
+   "collected": 6,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "oaf028_verdict",
+   "collected": 48,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "overlap_history",
+   "collected": 34,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "privacy",
+   "collected": 14,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "product_vertical06",
+   "collected": 17,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "product_vertical07",
+   "collected": 9,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "rc1_closeout",
+   "collected": 26,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "rc1s_closeout",
+   "collected": 113,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "risk_gap_closure",
+   "collected": 16,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "risk_kernel",
+   "collected": 73,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "risk_kernel_mutations",
+   "collected": 29,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "schema_validation",
+   "collected": 32,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "session_deletion",
+   "collected": 23,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "timebase_canon",
+   "collected": 6,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "unified_explain_unit",
+   "collected": 65,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "unified_providers_explain",
+   "collected": 4,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "vertical04_state",
+   "collected": 80,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "vertical05_provenance",
+   "collected": 11,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "vertical2_alerts",
+   "collected": 60,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "vertical2_dashboards",
+   "collected": 15,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "vertical2_feeds",
+   "collected": 32,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "vertical2_security",
+   "collected": 21,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "vertical2_track",
+   "collected": 4,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "vertical2_wcam",
+   "collected": 38,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "video_feeds15",
+   "collected": 27,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "vs02_integrity",
+   "collected": 31,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "vs02_replay_mp4",
+   "collected": 9,
+   "passed": null,
+   "exit": null
+  },
+  {
+   "module": "vs02_webcam_risk",
+   "collected": 62,
+   "passed": null,
+   "exit": null
+  }
+ ],
+ "vitest": null,
+ "e2e": {},
+ "note": "informational copy of the generated block in MG-MVP1-ACCEPTANCE-001; a targeted module run is never a gate result"
+}

@@ -1,0 +1,19 @@
+Zonivra release candidate (technical source accepted; publication and legal gates NOT cleared)
+
+Source commit: afe4b396a01106c78a36b7d6b3557a86d18ce0d0
+Source tree:   491dddb1c04bc72d5b84e59ec5b681ee1a64fec1
+Parent (previously accepted baseline): d4bbb571ce3daad987fd82c96d3e931eec708305
+Parent tree:   169fc74550b79a2d62b17ee22952812938dc4781
+Accepted Meta baseline: de8a08afb8286327b446a91b26178932e4f0f81a
+Accepted UI baseline:   e05844a134815bdc34bf9555d2385066560061ef
+
+Delta afe4b396 vs d4bbb571 (UI-only): frontend/src/app/Shell.tsx, frontend/src/i18n_ext.ts,
+frontend/src/style.css (+ one browser test not distributed in this package). The delta was
+independently reviewed and returned FV29_DELTA_PASS (Codex FINAL DELTA GATE 31).
+
+Webcam backend is byte-identical to de8a08a. The rejected Webcam D1-R2 patch is NOT included.
+
+This package is a curated, sanitized subset of the source tree plus release-authored documents
+(licence notice, third-party notices, SBOM/licence inventory, limitations). See
+docs/release/ and SHA256SUMS.txt. Technical acceptance of the source does not grant any
+permission to copy, use or distribute it.

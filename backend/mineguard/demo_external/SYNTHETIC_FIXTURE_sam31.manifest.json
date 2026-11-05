@@ -1,0 +1,21 @@
+{
+ "captured_utc": "2026-11-02T00:00:00Z",
+ "concept": "truck",
+ "declared_by": "project fixture generator",
+ "fixture_label": "SYNTHETIC_FIXTURE",
+ "model": "sam-3.1",
+ "provenance_class": "SYNTHETIC_FIXTURE",
+ "provider": "meta_sam31",
+ "response": {
+  "bytes": 402,
+  "content_type": "text/event-stream",
+  "http_status": 200,
+  "sha256": "38ae3649a047682d36e1aa2e182d21cc0db4477c5fefbcbfda25a277ca8b98d4"
+ },
+ "schema": "mg.meta.import.manifest/1",
+ "source_image": {
+  "height": 240,
+  "sha256": "d143285168cce3f0784c1ee1dbe74141b16053f641809517c1772365decf7c1a",
+  "width": 320
+ }
+}

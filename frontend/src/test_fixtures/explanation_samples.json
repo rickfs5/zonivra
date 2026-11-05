@@ -1,0 +1,359 @@
+[
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado RED. Origen: simulacion con guion (sintetica, no es inferencia real).",
+  "decision": "El estado final RED proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Evento R-PV-01 severidad RED desde t=1.5 s hasta t=4.0 s."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado GREEN. Origen: simulacion con guion (sintetica, no es inferencia real).",
+  "decision": "El estado final GREEN proviene del motor de reglas determinista.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "El motor determinista no registro eventos de riesgo en la zona."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado UNKNOWN. Origen: simulacion con guion (sintetica, no es inferencia real).",
+  "decision": "El estado final UNKNOWN proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Intervalo desconocido de t=0.0 s a t=2.0 s (causas: adapter_error).",
+   "Intervalo desconocido de t=2.0 s a t=3.0 s (causas: no indicadas)."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado RED. Origen: registro restaurado del almacen local (historia, no en vivo).",
+  "decision": "El estado final RED proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Evento R-PV-01 severidad RED desde t=1.5 s hasta t=4.0 s."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado GREEN. Origen: registro restaurado del almacen local (historia, no en vivo).",
+  "decision": "El estado final GREEN proviene del motor de reglas determinista.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "El motor determinista no registro eventos de riesgo en la zona."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado UNKNOWN. Origen: registro restaurado del almacen local (historia, no en vivo).",
+  "decision": "El estado final UNKNOWN proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Intervalo desconocido de t=0.0 s a t=2.0 s (causas: adapter_error).",
+   "Intervalo desconocido de t=2.0 s a t=3.0 s (causas: no indicadas)."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado RED. Origen: analisis local del modelo sobre un archivo repetido (no son dos camaras).",
+  "decision": "El estado final RED proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Evento R-PV-01 severidad RED desde t=1.5 s hasta t=4.0 s."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado GREEN. Origen: analisis local del modelo sobre un archivo repetido (no son dos camaras).",
+  "decision": "El estado final GREEN proviene del motor de reglas determinista.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "El motor determinista no registro eventos de riesgo en la zona."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado UNKNOWN. Origen: analisis local del modelo sobre un archivo repetido (no son dos camaras).",
+  "decision": "El estado final UNKNOWN proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Intervalo desconocido de t=0.0 s a t=2.0 s (causas: adapter_error).",
+   "Intervalo desconocido de t=2.0 s a t=3.0 s (causas: no indicadas)."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado RED. Origen: analisis local del modelo sobre un archivo de video registrado.",
+  "decision": "El estado final RED proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Evento R-PV-01 severidad RED desde t=1.5 s hasta t=4.0 s."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado GREEN. Origen: analisis local del modelo sobre un archivo de video registrado.",
+  "decision": "El estado final GREEN proviene del motor de reglas determinista.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "El motor determinista no registro eventos de riesgo en la zona."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado UNKNOWN. Origen: analisis local del modelo sobre un archivo de video registrado.",
+  "decision": "El estado final UNKNOWN proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Intervalo desconocido de t=0.0 s a t=2.0 s (causas: adapter_error).",
+   "Intervalo desconocido de t=2.0 s a t=3.0 s (causas: no indicadas)."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado RED. Origen: analisis local del modelo sobre una camara declarada por el navegador (origen no verificado).",
+  "decision": "El estado final RED proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Evento R-PV-01 severidad RED desde t=1.5 s hasta t=4.0 s."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado GREEN. Origen: analisis local del modelo sobre una camara declarada por el navegador (origen no verificado).",
+  "decision": "El estado final GREEN proviene del motor de reglas determinista.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "El motor determinista no registro eventos de riesgo en la zona."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado UNKNOWN. Origen: analisis local del modelo sobre una camara declarada por el navegador (origen no verificado).",
+  "decision": "El estado final UNKNOWN proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Intervalo desconocido de t=0.0 s a t=2.0 s (causas: adapter_error).",
+   "Intervalo desconocido de t=2.0 s a t=3.0 s (causas: no indicadas)."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado RED. Origen: analisis local del modelo (tipo de fuente no especificado).",
+  "decision": "El estado final RED proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Evento R-PV-01 severidad RED desde t=1.5 s hasta t=4.0 s."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado GREEN. Origen: analisis local del modelo (tipo de fuente no especificado).",
+  "decision": "El estado final GREEN proviene del motor de reglas determinista.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "El motor determinista no registro eventos de riesgo en la zona."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado UNKNOWN. Origen: analisis local del modelo (tipo de fuente no especificado).",
+  "decision": "El estado final UNKNOWN proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Intervalo desconocido de t=0.0 s a t=2.0 s (causas: adapter_error).",
+   "Intervalo desconocido de t=2.0 s a t=3.0 s (causas: no indicadas)."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado RED. Origen: origen no clasificado.",
+  "decision": "El estado final RED proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Evento R-PV-01 severidad RED desde t=1.5 s hasta t=4.0 s."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado GREEN. Origen: origen no clasificado.",
+  "decision": "El estado final GREEN proviene del motor de reglas determinista.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "El motor determinista no registro eventos de riesgo en la zona."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ },
+ {
+  "resumen": "Resumen simulado: la regla determinista dejo la zona Z1 en estado UNKNOWN. Origen: origen no clasificado.",
+  "decision": "El estado final UNKNOWN proviene del motor de reglas determinista risk-1.2.",
+  "uncertainties": [
+   "Esta explicacion es simulada: no se llamo a ningun modelo y no se inspecciono video ni imagenes.",
+   "El registro del ciclo de vida de la fuente no esta disponible para este incidente.",
+   "La geometria es en pixeles de imagen; no hay distancias fisicas."
+  ],
+  "facts": [
+   "Intervalo desconocido de t=0.0 s a t=2.0 s (causas: adapter_error).",
+   "Intervalo desconocido de t=2.0 s a t=3.0 s (causas: no indicadas)."
+  ],
+  "steps": [
+   "Revisar los eventos listados contra la fuente original antes de actuar.",
+   "Confirmar la zona y la politica con el responsable."
+  ],
+  "rule": "La severidad la fija el motor de reglas determinista, no el modelo."
+ }
+]

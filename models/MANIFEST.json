@@ -1,0 +1,25 @@
+{
+  "manifest_version": 1,
+  "models": [
+    {
+      "model_id": "rf-detr-nano-coco",
+      "architecture": "RF-DETR Nano (rfdetr==1.11.2, class RFDETRNano)",
+      "file": "rf-detr-nano.pth",
+      "sha256": "d8d6b9ee57d4d0ed2b1f305163624712a0532cb7bce0c747317984fc5457440d",
+      "md5_published_by_package": "fb6504cce7fbdc783f7a46991f07639f",
+      "bytes": 366287238,
+      "source_url": "https://storage.googleapis.com/rfdetr/nano_coco/checkpoint_best_regular.pth",
+      "source_url_origin": "rfdetr/assets/model_weights.py (RF_DETR_NANO) in the installed rfdetr==1.11.2 package",
+      "retrieved_utc": "2026-10-24T06:52:38Z",
+      "license_evidence": {
+        "weights_license_claim": "Apache-2.0 (RF-DETR-N row of the upstream README model table)",
+        "readme_url": "https://github.com/roboflow/rf-detr/blob/develop/README.md",
+        "code_license": "Apache-2.0 (upstream LICENSE; PyPI metadata rfdetr 1.11.2)",
+        "excluded": "rfdetr_plus and PML 1.0 variants (Atto, Femto, Pico, XL, 2XL) are not used",
+        "backbone": "DINOv2 vision transformer; facebookresearch/dinov2 README states code and model weights are Apache-2.0",
+        "training_data": "COCO; image and annotation terms not independently reviewed (OPEN)",
+        "status": "APPROVED-WITH-CONDITIONS by Night Run 01 authorization; not legal clearance; patent freedom-to-operate not assessed"
+      }
+    }
+  ]
+}

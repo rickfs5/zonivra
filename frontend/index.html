@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      /* Pre-paint theme (NS20): same rules as src/theme.ts -- stored light|dark|system, invalid -> system, system follows the OS. No network, no cookies. */
+      (function () { var t = "system"; try { var v = localStorage.getItem("zonivra.theme"); if (v === "light" || v === "dark" || v === "system") t = v; } catch (e) {}
+        var dark = true; try { dark = window.matchMedia("(prefers-color-scheme: dark)").matches; } catch (e) {}
+        var r = t === "system" ? (dark ? "dark" : "light") : t; var d = document.documentElement; d.setAttribute("data-theme", r); d.setAttribute("data-theme-pref", t); d.style.colorScheme = r; })();
+    </script>
+    <title>Zonivra · AI-assisted video review</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

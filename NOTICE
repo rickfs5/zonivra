@@ -1,0 +1,16 @@
+Zonivra — source-available evaluation candidate
+
+Original project materials: Copyright (c) 2026 Zonivra. All rights reserved.
+
+This repository references but does not redistribute RF-DETR model weights,
+third-party recorded media, the private genuine Meta response, personal data,
+or paid audiovisual assets.
+
+Synthetic fixtures are identified in their filenames, manifests, UI labels,
+and documentation. The bundled SAM fixture was not produced by a live Meta
+call. A separate owner-operated external Meta result was reviewed privately;
+only sanitized descriptions and approved audiovisual evidence may be shared.
+
+Third-party dependencies retain their own notices and licenses. See
+THIRD_PARTY_NOTICES.md.
+

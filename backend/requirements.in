@@ -1,0 +1,11 @@
+# Direct dependencies of VS-01. Install the exact closure from requirements.freeze.txt (see docs/MG-VS01-bom-and-provenance.md).
+# Deliberately ABSENT (license/provenance gate): opencv-python* (bundled GPL-configured FFmpeg), av/PyAV, ultralytics, rfdetr_plus.
+rfdetr==1.11.2
+fastapi==0.162.0
+uvicorn==0.54.0
+numpy==2.5.4
+pillow==13.0.0
+pyobjc-framework-AVFoundation==12.2.2
+pyobjc-framework-CoreMedia==12.2.2
+pytest==9.1.1
+httpx==0.28.1
